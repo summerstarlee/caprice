@@ -32,12 +32,21 @@
     } */
 
   >blockquote {
-    @apply text-center font-bold italic px-4 mb-12 pt-6 text-3xl leading-tight;
+    @apply bg-slate-50 p-1 text-slate-400;
+
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      width: 3px;
+      height: 100%;
+      background-color: #cccccc;
+      top: 0;
+      left: -7px;
+    }
   }
 
-  >blockquote>p {
-    @apply text-3xl leading-tight;
-  }
+
 
   >img {
     @apply my-12;
